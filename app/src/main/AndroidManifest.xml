@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.rapidplus.shop">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <application
+        android:name="com.rapidplus.shop.application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:fullBackupContent="true"
+        tools:ignore="GoogleAppIndexingWarning"
+        android:configChanges="locale"
+        android:hardwareAccelerated="true"
+        android:usesCleartextTraffic="true">
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_api_key" />
+
+
+        <activity
+            android:name="com.rapidplus.shop.activity.HomeActivity"
+            android:configChanges="screenSize"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.rapidplus.shop.activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.rapidplus.shop.activity.LoginActivity"
+            android:configChanges="screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.rapidplus.shop.activity.RegisterActivity"
+            android:configChanges="screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.rapidplus.shop.activity.EditProfileActivity"
+            android:configChanges="screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.rapidplus.shop.activity.HistoryActivity"
+            android:configChanges="screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.rapidplus.shop.activity.AddOnsActivity"
+            android:configChanges="screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.rapidplus.shop.activity.AddAddOnsActivity"
+            android:configChanges="screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.rapidplus.shop.activity.ProductsActivity"
+            android:configChanges="screenSize"
+            android:screenOrientation="portrait"
+            android:taskAffinity=".products" />
+        <activity
+            android:name="com.rapidplus.shop.activity.CategoryActivity"
+            android:configChanges="screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.rapidplus.shop.activity.AddCategoryActivity"
+            android:configChanges="screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.rapidplus.shop.activity.AddProductActivity"
+            android:configChanges="screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.rapidplus.shop.activity.RestaurantTimingActivity"
+            android:configChanges="screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.rapidplus.shop.activity.ChangePasswordActivity"
+            android:configChanges="screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.rapidplus.shop.activity.EditRestaurantActivity"
+            android:configChanges="screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.rapidplus.shop.activity.RequestAcceptActivity"
+            android:configChanges="screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.rapidplus.shop.activity.OrderDetailActivity"
+            android:configChanges="screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.rapidplus.shop.activity.DeliveriesActivity"
+            android:configChanges="screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.rapidplus.shop.activity.ForgotPassword"
+            android:configChanges="screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.rapidplus.shop.activity.OtpActivity"
+            android:configChanges="screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.rapidplus.shop.activity.ResetPasswordActivity"
+            android:configChanges="screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.rapidplus.shop.activity.ProductAddOnActivity"
+            android:configChanges="screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.rapidplus.shop.activity.ProductAddOnListActivity"
+            android:configChanges="screenSize"
+            android:screenOrientation="portrait" />
+
+        <service android:name="com.rapidplus.shop.notification.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service android:name="com.rapidplus.shop.notification.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="firebase_crashlytics_collection_enabled"
+            android:value="${crashlyticsEnabled}" />
+
+
+        <!--<meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="3aef7a5b05836cf8166f23c95e43c52517bee917" />-->
+
+
+    </application>
+
+</manifest>

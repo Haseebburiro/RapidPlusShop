@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/item_layout"
+    android:gravity="center">
+
+    <ImageView
+        android:src="@color/colorTheme"
+        android:layout_width="@dimen/_5sdp"
+        android:layout_height="@dimen/_5sdp" />
+
+    <TextView
+        android:id="@+id/addon_detail"
+        android:padding="@dimen/_4sdp"
+        android:layout_weight="1"
+        android:textSize="@dimen/text_small"
+        android:textColor="@color/colorSecondaryText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/addon_price"
+        android:padding="@dimen/_4sdp"
+        android:gravity="end"
+        android:layout_weight="2.5"
+        android:textSize="@dimen/text_small"
+        android:textColor="@color/colorSecondaryText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

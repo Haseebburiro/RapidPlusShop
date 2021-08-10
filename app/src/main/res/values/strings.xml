@@ -1,0 +1,292 @@
+<resources>
+
+    <string name="app_name">RapidPlus Empresas</string>
+    <string name="google_map_key" translatable="false">AIzaSyAq0f89oJfeLzk6_d6xniV60FCil7O6Y2w</string>
+
+    <!-- SignUp -->
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="phone_number">Phone number</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="already_have_an_account_click_here_to">Already have an account? Click here to</string>
+    <string name="sign_in">Sign In</string>
+    <string name="username_or_email_id">Username or email id</string>
+    <string name="forgot_password">Forgot password?</string>
+
+    <string name="sign_up_here">SIGN UP here</string>
+
+    <!-- REGISTER -->
+    <string name="enter_the_details_to_register">Enter the details to register</string>
+    <string name="name">Name</string>
+    <string name="email">Email Address</string>
+    <string name="country">Country</string>
+    <string name="mob_num">Phone Number</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="no_account">Don\'t have an account</string>
+    <string name="donot_have_an_account">Don\'t have an account?</string>
+    <string name="do_have_an_account">Do have an account?</string>
+    <string name="title_activity_launcher">LauncherActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="location">Location</string>
+    <string name="address">Address</string>
+    <string name="clock_timer">00:00</string>
+    <string name="open_time">Open Time</string>
+    <string name="close_time">Close Time</string>
+
+    <!-- LOGIN -->
+    <string name="enter_the_details_to_login">Enter the details to Login</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="empty_string" />
+    <string name="empty">empty</string>
+    <string name="search_here">Search here</string>
+    <string name="logout">Logout</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="edit_restaurant">Edit Restaurant</string>
+    <string name="edit_timing">Edit Timing</string>
+    <string name="deliveries">Deliveries</string>
+    <string name="change_language">Change Language</string>
+    <string name="change_password">Change Password</string>
+    <string name="payment">Payment</string>
+    <string name="profile">Profile</string>
+    <string name="ongoing">Ongoing</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="past">Past</string>
+    <string name="favorites">Favorites</string>
+    <string name="email_id">Email Id</string>
+    <string name="save">Save</string>
+    <string name="title_activity_house_detail">HouseDetailActivity</string>
+    <string name="action_settings">Settings</string>
+
+    <!--Home Fragment-->
+    <string name="incoming_orders">Incoming Orders</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="history">History</string>
+
+    <string name="restaurant">Restaurant</string>
+    <string name="add_ons">Add-ons</string>
+    <string name="category">Category</string>
+    <string name="product">Product</string>
+    <string name="products">Product List</string>
+    <string name="dishes">Dishes</string>
+    <string name="add_add_ons">Add Addons</string>
+    <string name="add_ons_list">Addons List</string>
+    <string name="create_add_ons">Create AddOns</string>
+    <string name="add_products">Add Products</string>
+    <string name="add_category">Add Category</string>
+
+    <!--    Revenue-->
+    <string name="revenue">Revenue</string>
+    <string name="total_revenue">Total Revenue</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="today_till_now">Today Till Now</string>
+    <string name="total_last_week">Total Last Week</string>
+    <string name="this_week_till_now">This Week Till Now</string>
+    <string name="description">Description</string>
+    <string name="write_description">Write Description....</string>
+    <string name="status">Status</string>
+    <string name="category_order">Category Order</string>
+    <string name="image_upload">Image Upload</string>
+    <string name="is_this_a_featured_product">Is this is a featured product?</string>
+    <string name="is_this_a_selected_food_type">Is this is a selected food type?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="veg">Veg</string>
+    <string name="non_veg">Non Veg</string>
+    <string name="featured_image_upload">Featured image upload</string>
+    <string name="add_product">Create Product</string>
+    <string name="every_day">Everyday</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+    <string name="confirm">Confirm</string>
+
+    <!--    Change Password Activity-->
+    <string name="current_password">Current Password</string>
+    <string name="new_password">New Password</string>
+
+    <!--    Edit Restaurant Activity-->
+    <string name="is_this_a_pure_veg_restaurant">Is this is a pure veg restaurant?</string>
+    <string name="do_you_have_delivery">Do you have own delivery man?</string>
+    <string name="min_amount">Min Amount</string>
+    <string name="offer_in_percentage">Offer in percentage</string>
+    <string name="maximum_delivery_time">Maximum Delivery Time</string>
+    <string name="price">Price</string>
+
+    <!--    Request Accept Activity-->
+    <string name="order_time">Order Time</string>
+    <string name="cancel">Cancel</string>
+    <string name="accept">Accept</string>
+    <string name="order_list">Order List</string>
+    <string name="notes">Notes</string>
+    <string name="sub_total">Sub Total</string>
+    <string name="gst">Gst</string>
+    <string name="cgst">CGST</string>
+    <string name="sgst">SGST</string>
+    <string name="delivery_charges">Delivery Charges</string>
+    <string name="total">Total</string>
+
+    <!--    Filter Dialog Activity-->
+    <string name="filter_by">Filter By</string>
+    <string name="delivery_person">Delivery Person</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="filter">Filter</string>
+    <string name="calender_date">dd:mm:yyyy</string>
+    <string name="country_name">Country Name</string>
+    <string name="landmark">Landmark</string>
+
+    <!--Error Validation-->
+    <string name="please_enter_mail_id">Please enter mail id</string>
+    <string name="please_enter_valid_mail_id">Please enter valid mail id</string>
+    <string name="please_enter_password">Please enter password</string>
+    <string name="please_enter_new_password">Please enter new password</string>
+    <string name="please_enter_minimum_length_password">Please enter at least 6 characters in password</string>
+    <string name="please_enter_name">Please enter name</string>
+    <string name="please_enter_phone_number">Please enter phone number</string>
+    <string name="please_enter_confirm_password">Please enter confirm password</string>
+    <string name="password_and_confirm_password_doesnot_match">Password and Confirm Password doesn\'t match!</string>
+    <string name="please_fill_your_address">Please fill your address</string>
+    <string name="please_enter_amount">Please enter minimum amount</string>
+    <string name="please_enter_delievery_time">Please enter maximum delivery time</string>
+    <string name="please_enter_landmark">Please enter landmark</string>
+    <string name="something_went_wrong">Something went wrong!</string>
+    <string name="oops_no_internet">Oops! No internet connection</string>
+    <string name="tax">Tax</string>
+    <string name="discount">Discount</string>
+    <string name="addon_">%s(%d x %s)</string>
+    <string name="product_">%s(%d x %s)</string>
+    <string name="order_delivery_time_description">Enter the order preparation time ?</string>
+    <string name="order_delivery_time">Order delivery time</string>
+    <string name="okay">Okay</string>
+    <string name="please_enter_delivery_time">Please enter delivery time</string>
+    <string name="order">Order</string>
+    <string name="are_you_sure_want_to_cancel_the_order">Are you sure want to cancel the order?</string>
+    <string name="please_enter_addons_name">Please enter Addons name</string>
+    <string name="addons_added_successfully">Addons added Successfully</string>
+    <string name="addons_updated_successfully">Addons updated Successfully</string>
+    <string name="are_you_sure_want_to_delete_addon">Are you sure want to delete this addon?</string>
+    <string name="are_you_sure_want_to_delete_category">Are you sure want to delete this category?</string>
+    <string name="are_you_sure_want_to_delete_product">Are you sure want to delete this product?</string>
+    <string name="update_add_ons">Update AddOns</string>
+    <string name="please_select_avatar">Please select avatar</string>
+    <string name="please_enter_all_fields">Please enter all fields</string>
+    <string name="invalid_open_time">Please select open time</string>
+    <string name="invalid_close_time">Please select close time</string>
+    <string name="cuisine">Cuisine</string>
+    <string name="invalid_cuisine">Please select cuisine</string>
+    <string name="done">Done</string>
+    <string name="next">Next</string>
+    <string name="enable">Enabled</string>
+    <string name="disable">Disabled</string>
+    <string name="dispute_created">Dispute Created</string>
+    <string name="status_active">Active</string>
+    <string name="status_onboarding">OnBoarding</string>
+    <string name="status_banned">Banned</string>
+    <string name="select_cuisine">Select Cuisine</string>
+
+
+    <!--<string name="splash_tomoeats_partner">TOMOEATS\nRestaurant</string>-->
+    <string name="splash_tomoeats_partner">TOMOEATS\nPartner</string>
+    <string name="restaurant_updated_successfully">Restaurant Updated Successfully</string>
+    <string name="password_updated_successfully">Password Updated Successfully</string>
+    <string name="restaurant_timing_updated_successfully">Restaurant Timing Updated Successfully</string>
+    <string name="action_save">Save</string>
+    <string name="select_delievery_person">Select Delivery Person</string>
+    <string name="item_order_price">Price</string>
+    <string name="currency_value">$</string>
+    <string name="currency_value_tag">$ </string>
+    <string name="schedule_at">Scheduled at : </string>
+    <string name="schedule_at_format">Scheduled at : %1$s %2$s %3$d</string>
+
+    <!--Order Flow Title-->
+    <string name="order_placed">Order Placed</string>
+    <string name="order_confirmed">Order Confirmed</string>
+    <string name="order_processed">Order Processed</string>
+    <string name="order_pickedup">Order PickedUp</string>
+    <string name="order_delivered">Order Delivered</string>
+    <string name="order_cancelled">Order Cancelled</string>
+
+
+    <!--Order Flow Description-->
+    <string name="description_1">We have received your order.</string>
+    <string name="description_2">Your order has been confirmed.</string>
+    <string name="description_3">Your food is getting cooked.</string>
+    <string name="description_4">Your food is on its way.</string>
+    <string name="description_5">Enjoy your meal.</string>
+
+    <!--Product-->
+    <string name="error_msg_product_name">Please enter product name</string>
+    <string name="error_msg_product_description">Please enter product description</string>
+    <string name="error_msg_product_order">Please enter product order</string>
+    <string name="error_msg_product_category">Please select category</string>
+    <string name="error_msg_selected_food_type">Please select food type</string>
+    <string name="product_select_catefory">Select Category</string>
+    <string name="error_msg_product_select_featured_image">Please select featured image</string>
+    <string name="enter_new_password">Enter New Password</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+    <string name="change">Change</string>
+    <string name="please_enter_otp">Please Enter OTP</string>
+    <string name="please_new_password">Please Enter New Password</string>
+    <string name="order_received">Order Received</string>
+    <string name="ordered_delievered">Ordered Delivered</string>
+    <string name="today_earnings">Today Earnings</string>
+    <string name="monthly_earnings">Monthly Earnings</string>
+    <string name="discount_type">Discount Type</string>
+    <string name="please_enter_price">Please Enter Price</string>
+    <string name="please_select_discount_type">Please select discount type</string>
+    <string name="select_addons">Select Addons</string>
+    <string name="category_added_successfully">Category Added Successfully</string>
+    <string name="product_added_successfully">Product Added Successfully</string>
+    <string name="no_addons">No Addons</string>
+    <string name="please_enter_category_name">Please enter category name</string>
+    <string name="please_enter_category_description">Please enter category description</string>
+    <string name="please_select_status">Please select status</string>
+    <string name="please_select_category_image">Please select category image</string>
+    <string name="please_select_product_image">Please select product image</string>
+    <string name="category_list">Category List</string>
+    <string name="edit_product">Edit Product</string>
+    <string name="edit_category">Edit Category</string>
+    <string name="please_enter_discount_amount">Please enter discount amount</string>
+    <string name="no_products_added">No Products Added</string>
+    <string name="no_addons_added">No addons added</string>
+    <string name="no_upcoming_orders_found">No upcoming orders found</string>
+    <string name="no_past_orders_found">No past orders found</string>
+    <string name="no_cancelled_orders_found">No cancelled orders found</string>
+    <string name="please_enter_description">Please enter description</string>
+    <string name="no_incoming_orders_received">No incoming orders received</string>
+    <string name="invalid_credentials">Invalid Credentials</string>
+    <string name="waiting_for_new_orders">Waiting for new orders</string>
+    <string name="shop_image">Shop Image</string>
+    <string name="shop_banner">Shop Banner Image</string>
+    <string name="invalid_email">Invalid Email</string>
+    <string name="no_deliveries_found">No deliveries found</string>
+
+    <!-- Round of Decimal -->
+    <string name="round_off">%.2f</string>
+
+    <string-array name="languages">
+        <item>English</item>
+        <item>Spanish</item>
+    </string-array>
+
+    <string name="orders">Orders</string>
+    <string name="awesome_food">Awesome food with awesome price</string>
+    <string name="next_bank">Next to bank</string>
+    <string name="cash">Cash</string>
+    <string name="completed">COMPLETED</string>
+    <string name="are_you_sure_want_logout">Would you like to logout?</string>
+    <string name="are_you_sure_want_delete_restaurant">Are you sure you want to delete this restaurant?</string>
+    <string name="incoming">Incoming</string>
+</resources>

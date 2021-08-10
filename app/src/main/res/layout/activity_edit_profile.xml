@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/background_grey"
+    android:layout_height="match_parent"
+    tools:context="com.rapidplus.shop.activity.EditProfileActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_vertical_margin_half"
+            android:layout_marginRight="@dimen/activity_vertical_margin_half"
+            android:layout_marginTop="@dimen/activity_vertical_margin_half"
+            android:elevation="@dimen/_2sdp"
+            app:cardCornerRadius="@dimen/_4sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@id/profile_img"
+                android:layout_toRightOf="@id/profile_img"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="@dimen/activity_vertical_margin">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/first_name"
+                    android:textSize="@dimen/text_small" />
+
+                <EditText
+                    android:padding="@dimen/_4sdp"
+                    android:id="@+id/et_first_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:inputType="textPersonName"
+                    android:text="Micheal"
+                    android:textSize="@dimen/text_medium" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:text="@string/last_name"
+                    android:textSize="@dimen/text_small" />
+
+                <EditText
+                    android:padding="@dimen/_4sdp"
+                    android:id="@+id/et_last_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:inputType="textPersonName"
+                    android:text="Thompshon"
+                    android:textSize="@dimen/text_medium" />
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_vertical_margin_half"
+            android:layout_marginRight="@dimen/activity_vertical_margin_half"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:elevation="@dimen/_2sdp"
+            app:cardCornerRadius="@dimen/_4sdp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@id/profile_img"
+                android:layout_toRightOf="@id/profile_img"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="@dimen/activity_vertical_margin">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/phone_number"
+                    android:textSize="@dimen/text_small" />
+
+                <EditText
+                    android:padding="@dimen/_4sdp"
+                    android:id="@+id/et_phone_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:inputType="number"
+                    android:text="9578121212"
+                    android:textSize="@dimen/text_medium" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:text="@string/email_id"
+                    android:textSize="@dimen/text_small" />
+
+                <EditText
+                    android:padding="@dimen/_4sdp"
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:inputType="textEmailAddress"
+                    android:text="john@gmail.com"
+                    android:textSize="@dimen/text_medium" />
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/save_btn"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:layout_alignParentBottom="true"
+        android:text="@string/save"
+        android:background="@color/colorTheme"
+        android:textColor="@color/colorTextWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

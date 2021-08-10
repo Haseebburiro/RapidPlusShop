@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fdfdfe"
+    tools:context="com.rapidplus.shop.activity.RegisterActivity">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/register_btn"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_vertical_margin">
+
+            <ImageView
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/restaurant_app_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nunito_semi_bold"
+                android:text="@string/app_name"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="@dimen/text_medium" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:fontFamily="@font/nunito_semi_bold"
+                android:text="@string/enter_the_details_to_register"
+                android:textColor="@color/colorTheme"
+                android:textSize="@dimen/text_medium" />
+
+            <include layout="@layout/restaurant_details_lay" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:fontFamily="@font/nunito_semi_bold"
+                android:text="@string/status"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/text_tiny" />
+
+            <LinearLayout
+                android:id="@+id/llStatusPicker"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_text_size"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:background="@drawable/edit_text_rounded_corner_bg"
+                android:orientation="horizontal"
+                android:paddingEnd="@dimen/activity_vertical_margin_half"
+                android:paddingStart="@dimen/activity_vertical_margin_half">
+
+                <TextView
+                    android:id="@+id/tvStatus"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/status_active"
+                    android:textSize="@dimen/text_medium" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_drop_down"
+                    android:tint="@color/grey" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:fontFamily="@font/nunito_semi_bold"
+                    android:text="@string/image_upload"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/text_tiny" />
+
+                <ImageView
+                    android:id="@+id/avatar"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:contentDescription="@string/app_name"
+                    android:padding="@dimen/_4sdp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_placeholder_image_upload" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:fontFamily="@font/nunito_semi_bold"
+                    android:text="@string/shop_banner"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/text_tiny" />
+
+                <ImageView
+                    android:id="@+id/shop_image"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:contentDescription="@string/app_name"
+                    android:padding="@dimen/_4sdp"
+                    android:src="@drawable/ic_placeholder_image_upload" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:fontFamily="@font/nunito_semi_bold"
+                    android:text="@string/is_this_a_pure_veg_restaurant"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/text_tiny" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/veg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/yes" />
+
+                    <RadioButton
+                        android:id="@+id/non_veg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:fontFamily="@font/nunito_semi_bold"
+                    android:text="@string/do_you_have_delivery"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/text_tiny" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/delivery"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yes" />
+
+                    <RadioButton
+                        android:id="@+id/non_delivery"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/no" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+            <include layout="@layout/address_lay" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_size"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:background="@drawable/rounded_button"
+        android:text="@string/next"
+        android:layout_above="@+id/LLBottomLay"
+        android:textColor="@color/colorWhite" />
+
+    <LinearLayout
+        android:id="@+id/LLBottomLay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_bottom_layout_height"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/nunito_semi_bold"
+            android:text="@string/do_have_an_account"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/text_tiny" />
+
+        <TextView
+            android:id="@+id/txt_login"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_4sdp"
+            android:paddingStart="@dimen/_4sdp"
+            android:text="@string/login"
+            android:textAllCaps="true"
+            android:textColor="@color/colorTheme"
+            android:textSize="@dimen/text_tiny" />
+
+    </LinearLayout>
+
+</RelativeLayout>

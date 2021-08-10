@@ -1,0 +1,28 @@
+<resources>
+
+    <dimen name="text_margin">@dimen/_14sdp</dimen>
+
+    <dimen name="text_large">@dimen/_17sdp</dimen>
+    <dimen name="text_medium">@dimen/_13sdp</dimen>
+    <dimen name="text_normal">@dimen/_15sdp</dimen>
+    <dimen name="text_small">@dimen/_11sdp</dimen>
+    <dimen name="text_small_large">@dimen/_12sdp</dimen>
+    <dimen name="text_tiny">@dimen/_10sdp</dimen>
+
+    <dimen name="edit_text_size">@dimen/_32sdp</dimen>
+    <dimen name="edit_text_size_large">@dimen/_60sdp</dimen>
+    <dimen name="button_size">@dimen/_42sdp</dimen>
+    <dimen name="botttom_bar_size">@dimen/_45sdp</dimen>
+
+    <dimen name="cp_dialog_width">@dimen/_300sdp</dimen>
+    <dimen name="cp_dialog_height">@dimen/_400sdp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">@dimen/_14sdp</dimen>
+    <dimen name="activity_vertical_margin">@dimen/_14sdp</dimen>
+    <dimen name="activity_vertical_margin_half">@dimen/_7sdp</dimen>
+    <dimen name="activity_common_margin">@dimen/_14sdp</dimen>
+    <dimen name="login_bottom_layout_height">40dp</dimen>
+    <dimen name="material_spinner_height">45dp</dimen>
+
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.rapidplus.shop.activity.DeliveriesActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/toolbar_bg"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back_img"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/activity_vertical_margin_half"
+            android:src="@drawable/ic_back_arrow" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:padding="@dimen/activity_vertical_margin_half"
+            android:text="Title"
+            android:textColor="@color/toolbar_title"
+            android:textSize="@dimen/text_large" />
+
+        <ImageView
+            android:id="@+id/filter_img"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/activity_vertical_margin_half"
+            android:src="@drawable/ic_filter" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/deliveries_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+
+    <LinearLayout
+        android:id="@+id/llNoRecords"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="visible"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:src="@drawable/empty_place_holder"/>
+        <TextView
+            android:id="@+id/lblNoRecords"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/_13sdp"
+            android:fontFamily="@font/nunito_semi_bold"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="@string/no_deliveries_found"/>
+
+    </LinearLayout>
+
+</LinearLayout>

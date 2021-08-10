@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        app:cardCornerRadius="@dimen/_4sdp"
+        android:elevation="@dimen/_2sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:padding="@dimen/_8sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp">
+
+            <ImageView
+                android:id="@+id/home_img"
+                android:src="@color/grey"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_90sdp" />
+
+            <TextView
+                android:gravity="center"
+                android:text="$1700"
+                android:textColor="@color/colorTextWhite"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorTheme"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:paddingStart="@dimen/activity_vertical_margin_half"
+                android:paddingLeft="@dimen/activity_vertical_margin_half"
+                android:layout_toRightOf="@+id/home_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/address_header"
+                    android:textSize="@dimen/text_medium"
+                    android:textColor="@color/colorTextBlack"
+                    android:text="Georgein avenue"
+                    android:fontFamily="@font/nunito_semi_bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/address"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:textSize="@dimen/text_tiny"
+                    android:textColor="@color/colorSecondaryText"
+                    android:text="District 2 1642 avenue, divide roads PO box 3700 S30 225-432"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:id="@+id/status"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:textSize="@dimen/text_medium"
+                    android:textColor="@color/colorTheme"
+                    android:fontFamily="@font/nunito_semi_bold"
+                    android:text="Visited"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

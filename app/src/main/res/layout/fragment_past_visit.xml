@@ -1,0 +1,38 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rapidplus.shop.fragment.PastVisitFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/past_rv"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/llNoRecords"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:src="@drawable/empty_place_holder"/>
+        <TextView
+            android:id="@+id/lblNoRecords"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/_13sdp"
+            android:fontFamily="@font/nunito_semi_bold"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="@string/no_past_orders_found"/>
+
+    </LinearLayout>
+
+</FrameLayout>

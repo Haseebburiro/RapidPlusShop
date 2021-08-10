@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/item_layout"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginStart="@dimen/_10sdp"
+    android:layout_marginEnd="@dimen/_10sdp"
+    >
+
+
+    <CheckedTextView
+        android:id="@+id/ctvAddOnName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mayonnise"
+        android:textSize="@dimen/_14sdp"
+        android:checked="false"
+        android:textColor="@color/colorTextBlack"
+        android:checkMark="?android:attr/listChoiceIndicatorSingle"
+        android:fontFamily="@font/nunito_semi_bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:textColor="@color/colorTextBlack"
+        android:fontFamily="@font/nunito_semi_bold"
+        android:textSize="@dimen/_14sdp"/>
+
+    <EditText
+        android:id="@+id/etPrice"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_text_size"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginBottom="@dimen/_4sdp"
+        android:background="@drawable/edit_text_rounded_corner_bg"
+        android:imeOptions="actionDone"
+        android:inputType="numberDecimal"
+        android:maxLength="8"
+        android:padding="@dimen/_4sdp"
+        android:textColor="@color/colorSecondaryText"
+        android:textSize="@dimen/text_medium" />
+
+
+</LinearLayout>

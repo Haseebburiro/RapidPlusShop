@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6fbd3c</color>
+    <color name="colorPrimaryDark">#EF2F37</color>
+    <color name="colorAccent">#DE1E26</color>
+
+    <!-- App Theme Color-->
+    <color name="colorTheme">#DE1E26</color>
+    <color name="background_color">#f5f5f5</color>
+    <color name="background_grey">#eee</color>
+
+    <!-- Toolbar Color-->
+    <color name="toolbar_bg">#DE1E26</color>
+    <color name="toolbar_title">#FFF</color>
+
+    <!-- Text-->
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorSecondaryText">#747474</color>
+    <color name="light_grey">#f1f1f1</color>
+    <color name="very_light_grey">#fafafa</color>
+    <color name="medium_grey">#d1d0d0</color>
+    <color name="colorTextWhite">#FFF</color>
+    <color name="colorTextBlack">#212121</color>
+
+    <!-- Color-->
+    <color name="colorTransparent">#00ff6d00</color>
+    <color name="grey">#888888</color>
+    <color name="colorGreen">#00a551</color>
+    <color name="colorRed">#b31101</color>
+    <color name="colorBlue">#3b8771</color>
+    <color name="colorWhite">#FFF</color>
+    <color name="colorYellow">#ffeb3b</color>
+    <color name="colorPurple">#D1C4E9</color>
+
+   <!-- BottomSheet Color-->
+    <color name="bottomSheetInActiveColor">#747474</color>
+    <color name="bottomSheetInAccentColor">#6fbd3c</color>
+
+</resources>

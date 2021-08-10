@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.rapidplus.shop.fragment.CuisineSelectFragment">
+
+    <TextView
+        android:id="@+id/tvSelectCusine"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_size"
+        android:fontFamily="@font/nunito_semi_bold"
+        android:background="@drawable/rounded_button"
+        android:text="@string/select_cuisine"
+        android:gravity="center|left"
+        android:paddingLeft="@dimen/_10sdp"
+        android:textSize="@dimen/text_normal"
+        android:textColor="@color/colorWhite"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/cuisine_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvSelectCusine"
+        android:orientation="vertical" />
+
+
+    <Button
+        android:id="@+id/done"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_size"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rounded_button"
+        android:text="@string/done"
+        android:fontFamily="@font/nunito_semi_bold"
+        android:textSize="@dimen/text_normal"
+        android:textColor="@color/colorWhite" />
+
+</RelativeLayout>

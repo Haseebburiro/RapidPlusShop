@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.rapidplus.shop.activity.AddProductActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/save_btn"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/activity_vertical_margin"
+            android:layout_marginStart="@dimen/activity_vertical_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:fontFamily="@font/nunito_semi_bold"
+                android:text="@string/name"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/text_tiny" />
+
+            <EditText
+                android:id="@+id/et_product_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_text_size"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:background="@drawable/edit_text_rounded_corner_bg"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/_4sdp"
+                android:maxLength="100"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="@dimen/text_medium" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:fontFamily="@font/nunito_semi_bold"
+                android:text="@string/description"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/text_tiny" />
+
+            <EditText
+                android:id="@+id/et_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:background="@drawable/edit_text_rounded_corner_bg"
+                android:gravity="start"
+                android:minLines="3"
+                android:hint="@string/write_description"
+                android:imeOptions="actionNext"
+                android:inputType="textMultiLine"
+                android:maxLength="255"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="@dimen/text_medium" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:fontFamily="@font/nunito_semi_bold"
+                android:text="Product Cuisine"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/text_tiny" />
+            <TextView
+                android:id="@+id/cuisine"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_text_size"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:background="@drawable/edit_text_rounded_corner_bg"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="@dimen/_6sdp"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="@dimen/text_medium" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:fontFamily="@font/nunito_semi_bold"
+                android:text="@string/status"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/text_tiny" />
+
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                android:id="@+id/status_spin"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/material_spinner_height"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:background="@drawable/edit_text_rounded_corner_bg"
+                android:padding="@dimen/_4sdp"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="@dimen/text_medium" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:fontFamily="@font/nunito_semi_bold"
+                android:text="Product Order"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/text_tiny" />
+
+            <EditText
+                android:id="@+id/et_product_order"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_text_size"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:background="@drawable/edit_text_rounded_corner_bg"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:padding="@dimen/_4sdp"
+                android:maxLength="8"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="@dimen/text_medium" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:fontFamily="@font/nunito_semi_bold"
+                android:text="@string/category"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/text_tiny" />
+
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                android:id="@+id/category_spin"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/material_spinner_height"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:background="@drawable/edit_text_rounded_corner_bg"
+                android:padding="@dimen/_4sdp"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="@dimen/text_medium" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:fontFamily="@font/nunito_semi_bold"
+                android:text="@string/is_this_a_selected_food_type"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/text_tiny" />
+
+            <RadioGroup
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rbVeg"
+                    android:textSize="@dimen/text_small"
+                    android:textColor="@color/colorSecondaryText"
+                    android:text="@string/veg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:id="@+id/rbNonVeg"
+                    android:textSize="@dimen/text_small"
+                    android:textColor="@color/colorSecondaryText"
+                    android:text="@string/non_veg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:fontFamily="@font/nunito_semi_bold"
+                android:text="@string/image_upload"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/text_tiny" />
+
+            <RelativeLayout
+                android:id="@+id/rlProductImage"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:background="@drawable/edit_text_rounded_corner_bg">
+
+                <ImageView
+                    android:id="@+id/product_img"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_placeholder_image_upload" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:fontFamily="@font/nunito_semi_bold"
+                android:text="@string/is_this_a_featured_product"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/text_tiny" />
+
+            <RadioGroup
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rbYes"
+                    android:textSize="@dimen/text_small"
+                    android:textColor="@color/colorSecondaryText"
+                    android:text="@string/yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:id="@+id/rbNo"
+                    android:textSize="@dimen/text_small"
+                    android:textColor="@color/colorSecondaryText"
+                    android:text="@string/no"
+                    android:checked="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+
+            <LinearLayout
+                android:id="@+id/fetured_img_lay"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:fontFamily="@font/nunito_semi_bold"
+                    android:text="@string/featured_image_upload"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/text_tiny" />
+
+                <RelativeLayout
+                    android:id="@+id/rlFeaturedImage"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    android:background="@drawable/edit_text_rounded_corner_bg">
+
+                    <ImageView
+                        android:id="@+id/fetured_img"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_placeholder_image_upload" />
+
+                </RelativeLayout>
+
+                <!--This is dummy view to show bottom imageview-->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_80sdp"/>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@color/colorWhite">
+    <Button
+        android:id="@+id/next_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:background="@drawable/rounded_button"
+        android:text="@string/next"
+        android:textColor="@color/colorTextWhite"
+        android:textSize="@dimen/text_medium" />
+
+
+</LinearLayout>
+
+</RelativeLayout>
