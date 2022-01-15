@@ -2,7 +2,6 @@ package com.rapidplus.shop.network;
 
 import android.util.Log;
 
-import com.facebook.stetho.okhttp3.StethoInterceptor;
 import com.rapidplus.shop.config.AppConfigure;
 import com.rapidplus.shop.helper.GlobalData;
 
@@ -43,12 +42,10 @@ public class ApiClient {
         OkHttpClient client = new OkHttpClient.Builder()
                 .addNetworkInterceptor(interceptor)
                 .addNetworkInterceptor(new AddHeaderInterceptor())
-                .addNetworkInterceptor(new StethoInterceptor())
                 .connectTimeout(1, TimeUnit.MINUTES)
                 .readTimeout(1, TimeUnit.MINUTES)
                 .retryOnConnectionFailure(true)
                 .build();
-        client.connectionPool().evictAll();
         return client;
     }
 

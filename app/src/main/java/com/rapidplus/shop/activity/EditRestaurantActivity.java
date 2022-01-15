@@ -177,7 +177,7 @@ public class EditRestaurantActivity extends AppCompatActivity implements Profile
         connectionHelper = new ConnectionHelper(getApplicationContext());
 
         if (!Places.isInitialized()) {
-            Places.initialize(getApplicationContext(), getString(R.string.google_map_key));
+            Places.initialize(getApplicationContext(), Utils.encryptDecrypt());
         }
         placesClient = Places.createClient(this);
 

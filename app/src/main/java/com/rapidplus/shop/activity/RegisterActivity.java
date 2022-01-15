@@ -168,7 +168,7 @@ public class RegisterActivity extends AppCompatActivity {
         etConfirmPasswordEyeImg.setTag(0);
 
         if (!Places.isInitialized()) {
-            Places.initialize(getApplicationContext(), getString(R.string.google_map_key));
+            Places.initialize(getApplicationContext(), Utils.encryptDecrypt());
         }
         placesClient = Places.createClient(this);
 

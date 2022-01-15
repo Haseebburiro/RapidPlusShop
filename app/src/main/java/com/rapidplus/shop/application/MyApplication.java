@@ -5,7 +5,6 @@ import android.support.multidex.MultiDex;
 import android.support.multidex.MultiDexApplication;
 
 import com.crashlytics.android.Crashlytics;
-import com.facebook.stetho.Stetho;
 import com.rapidplus.shop.helper.SharedHelper;
 import com.rapidplus.shop.utils.LocaleUtils;
 
@@ -49,7 +48,6 @@ public class MyApplication extends MultiDexApplication {
     public void onCreate() {
         super.onCreate();
 //        Fabric.with(this, new Crashlytics());
-        Stetho.initializeWithDefaults(this);
 
         mAppController = this;
     }

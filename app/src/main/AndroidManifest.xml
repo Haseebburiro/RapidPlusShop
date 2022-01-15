@@ -22,6 +22,7 @@
         android:theme="@style/AppTheme"
         android:fullBackupContent="true"
         tools:ignore="GoogleAppIndexingWarning"
+        android:networkSecurityConfig="@xml/url_config_defaults"
         android:configChanges="locale"
         android:hardwareAccelerated="true"
         android:usesCleartextTraffic="true">

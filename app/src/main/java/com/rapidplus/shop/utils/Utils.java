@@ -6,6 +6,7 @@ import android.content.DialogInterface;
 import android.graphics.Bitmap;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AlertDialog;
+import android.util.Base64;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -16,6 +17,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -233,5 +235,17 @@ public class Utils {
 //
 //    }
 
+
+    public static String encryptDecrypt()
+    {
+        final String base64 = "QUl6YVN5QXEwZjg5b0pmZUx6azZfZDZ4bmlWNjBGQ2lsN082WTJ3";
+
+        // Receiving side
+        byte[] data = Base64.decode(base64, Base64.DEFAULT);
+        String decryptData = new String(data, StandardCharsets.UTF_8);
+
+        return decryptData.toString();
+
+    }
 
 }
